@@ -20,10 +20,14 @@
     display: none;
 }
 .home-section{
-    background-color:var(--bg-color);
+    background-color:#f0f011ed;
     width: 100vw;
     min-height: 100vh;
     background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 .home-img{
     /* background-color: #7C00FE; */
@@ -33,6 +37,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding-top: 120px;
+    padding: 50px;
  
 
 }
@@ -68,7 +73,7 @@ p{
 }
 .btn1{
     background-color: black;
-    color: var(--bg-color);
+    color:#fff;
     padding: 8px 15px;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +81,7 @@ p{
 }
 .btn1:hover {
     background-color: rgba(18, 18, 18, 0.742);
-    color: var(--bg-color);
+    color: #fff;
     padding: 8px 15px;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -221,7 +226,7 @@ width: 600px;
             justify-content: space-around;
             align-items: center;
             gap: 80px;
-            padding: 10px;
+        
 }
 .service-section h2{
     display: block;
@@ -262,28 +267,7 @@ padding: 5px;
     font-size: 0.8rem;
     color: #fff;
 }
-.serviceCard-Hover{
-    position: absolute;
-    backdrop-filter: blur(3px);
-    /* background-color: yellow; */
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    transform: translateY(-120%);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #F5004F;
- 
 
-
-}
-.service-card:hover .serviceCard-Hover{
-    transform: translate(0);
-    transition: 0.4s;
-}
 /* contact section  */
 .contact-section{
     background-attachment: fixed;

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/47-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="javascript.js">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,9 +20,9 @@
     <!-- home section  start-->
     <section class="home-section" id="home-section">
         <div class="navbar"
-            style="position:fixed;z-index: 1000;top: 0;background-color:#F5004F;font-family: Arial, Helvetica, sans-serif;font-weight:bold;border: 1px;color: #fff;display: flex;">
+            style="position:fixed;z-index: 1000;top: 0;backdrop-filter: blur(3px);box-shadow: 0 0 20px #222;font-family: Arial, Helvetica, sans-serif;font-weight:bold;border: 1px;color: #fff;display: flex;">
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl"><i class="fa-brands fa-html5 fa-xl" style="color: #ffeb0f;"></i></a>
+                <a class="btn btn-ghost text-xl"><i class="fa-brands fa-html5 fa-2xl" style="color: red;"></i></a>
             </div>
             <div class="flex-none">
                 <ul class="menu menu-horizontal px-5">
@@ -92,8 +93,7 @@
         </div>
         <div class="service-card " data-aos="fade-up" data-aos-interval="110" data-aos-delay="120">
             <div class="serviceCard-Hover">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum eaque nihil nisi, laboriosam
-                    minima!</p>
+
             </div>
             <img src="../img/food-2.jpg" alt="">
             <h3>Delicious Meat</h3>
@@ -225,6 +225,18 @@
         </footer>
     </section>
     <a href="#home-section"><i class="fa-regular fa-circle-up fa-2xl Upto" style="color: #fa0025;"></i></a>
+    <script>
+        const a = document.querySelector(".Upto")
+        console.log(a);
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 500) {
+                a.style.display = "block"
+            } else {
+                a.style.display = "none"
+            }
+        })
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
